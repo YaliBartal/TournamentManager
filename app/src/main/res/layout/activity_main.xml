@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<Space
+    android:layout_width="10dp"
+    android:layout_height="30dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="30dp"
+
+        android:src="@mipmap/ic_launcher_foreground"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Tournament Manager"
+        android:fontFamily="@font/circularblack"
+        android:textSize="30dp"
+        android:padding="20dp"/>
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnLogGoogle"
+        android:backgroundTint="@color/google_blue"
+        android:drawableLeft="@drawable/google"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+
+        android:text="Log in with Google"/>
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnLogEmail"
+        android:padding="15dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/crimson"
+        android:drawableLeft="@drawable/email"
+        android:text="Log in with Email"/>
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnSignUp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/peru"
+        android:drawableLeft="@drawable/person"
+        android:padding="15dp"
+        android:text="Create new account"/>
+
+</LinearLayout>
