@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_tournament_home"
+        android:icon="@drawable/tournament_placeholder"
+        android:title="tournaments"/>
+    <item
+        android:id="@+id/item_team_home"
+        android:icon="@drawable/team_placeholder"
+        android:title="teams"/>
+</menu>
