@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePageActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Toolbar/Menu -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:title="Tournament Manager"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- Slider for Tournaments and Teams -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnvMainNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:layout_gravity="top"
+        app:menu="@menu/top_nav_home"/>
+
+
+
+
+    <!-- ListView for Tournaments/Teams -->
+    <FrameLayout
+        android:id="@+id/fregmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <!-- Button to Add Tournaments or Teams -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Tournament/Team"
+        android:backgroundTint="@color/blue_violet"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

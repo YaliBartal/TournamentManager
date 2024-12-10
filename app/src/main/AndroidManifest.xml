@@ -13,6 +13,15 @@
         android:theme="@style/Theme.TournamentManager"
         tools:targetApi="31">
         <activity
+            android:name=".TournamentViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TournamentAddActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomePageActivity"
             android:exported="false" />
         <activity
